@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Geek | Quality Clothing & Footwear at Wholesale Rates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fdfbf7',
+                            100: '#fbf7ed',
+                            200: '#f4e9cf',
+                            300: '#eddcb2',
+                            400: '#e0c077',
+                            500: '#d3a43c',
+                            600: '#be9436',
+                            700: '#9e7b2d',
+                            800: '#7f6324',
+                            900: '#67511d'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #d3a43c 0%, #be9436 100%);
+        }
+        .gold-border-glow:hover {
+            box-shadow: 0 0 15px rgba(211, 164, 60, 0.4);
+            border-color: #d3a43c;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans overflow-x-hidden">
+
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="https://wa.me/919041876215" target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition-all transform hover:scale-110" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+        <a href="tel:+919041876215" class="bg-gold-500 hover:bg-gold-600 text-black p-4 rounded-full shadow-lg flex items-center justify-center transition-all transform hover:scale-110" title="Call Us">
+            <i class="fas fa-phone text-xl"></i>
+        </a>
+    </div>
+
+    <header class="sticky top-0 z-40 bg-black/95 border-b border-zinc-800 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-black tracking-wider text-white">FASHION<span class="text-gold-500">GEEK</span></span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest font-medium">
+                <a href="#home" class="hover:text-gold-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-gold-400 transition-colors">About</a>
+                <a href="#collections" class="hover:text-gold-400 transition-colors">Shop</a>
+                <a href="#why-choose-us" class="hover:text-gold-400 transition-colors">Features</a>
+                <a href="#contact" class="hover:text-gold-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="tel:+919041876215" class="border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-black px-5 py-2 rounded text-sm uppercase tracking-wider font-semibold transition-all">
+                    Call Now
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-950 border-b border-zinc-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-zinc-300 hover:text-gold-400 font-medium">Home</a>
+            <a href="#about" class="block py-2 text-zinc-300 hover:text-gold-400 font-medium">About</a>
+            <a href="#collections" class="block py-2 text-zinc-300 hover:text-gold-400 font-medium">Shop Collections</a>
+            <a href="#why-choose-us" class="block py-2 text-zinc-300 hover:text-gold-400 font-medium">Why Choose Us</a>
+            <a href="#contact" class="block py-2 text-zinc-300 hover:text-gold-400 font-medium">Contact Us</a>
+            <div class="pt-4">
+                <a href="tel:+919041876215" class="block w-full text-center bg-gold-500 text-black py-2.5 rounded font-bold uppercase tracking-wider">
+                    Call: +91 90418 76215
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="home">
+        <section class="relative min-h-[85vh] flex items-center justify-center bg-zinc-950 py-16 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="Screenshot 2026-05-25 191802.jpg" alt="Fashion Geek Store Front" class="w-full h-full object-cover object-center opacity-25 filter brightness-75">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-zinc-950/60"></div>
+            </div>
+
+            <div class="relative z-10 max-w-5xl mx-auto px-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900/90 border border-gold-500/30 text-gold-400 text-sm font-semibold uppercase tracking-widest mb-6 shadow-xl">
+                    <i class="fas fa-star text-xs"></i> 4.8 Rated Clothing Destination
+                </div>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-white mb-6">
+                    Upgrade Your Style <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600">Wholesale Rates</span>
+                </h1>
+                <p class="text-zinc-400 text-lg sm:text-xl max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                    Get the latest trends in men's wear, women's outfits, and top-tier footwear. High quality fabrics and modern fits, directly delivered to your wardrobe.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#collections" class="w-full sm:w-auto px-8 py-4 bg-gold-500 hover:bg-gold-600 text-black font-bold uppercase tracking-wider rounded transition-all shadow-lg shadow-gold-500/10 flex items-center justify-center gap-2">
+                        Explore Collections <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="https://wa.me/919041876215" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-bold uppercase tracking-wider rounded transition-all flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-lg text-green-500"></i> Order On WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-black border-t border-zinc-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+                    
+                    <div class="lg:col-span-5 relative" data-aos="fade-right">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-gold-500"></div>
+                        <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-gold-500"></div>
+                        <img src="Screenshot 2026-05-25 191733.jpg" alt="Inside Fashion Geek Store" class="w-full h-[450px] object-cover rounded shadow-2xl filter brightness-90 border border-zinc-800">
+                    </div>
+
+                    <div class="lg:col-span-7 space-y-6" data-aos="fade-left">
+                        <div class="text-gold-500 uppercase tracking-widest font-bold text-sm flex items-center gap-2">
+                            <span class="w-8 h-px bg-gold-500"></span> Welcome to Fashion Geek
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-white">
+                            Your Go-To Destination For Smart, Trendsetting Fashion
+                        </h2>
+                        <p class="text-zinc-400 text-lg leading-relaxed">
+                            Located in the heart of Khanpur, Kharar, Fashion Geek brings you an extensive collection of modern everyday wear and premium streetstyle garments at unmatched wholesale prices. We source clothes that fit right, look sharp, and stand the test of time.
+                        </p>
+                        <p class="text-zinc-400 text-lg leading-relaxed">
+                            Whether you need warm heavy-duty winter jackets, comfortable activewear track pants, crisp casual shirts, or clean footwear options, we ensure every piece meets your expectations with direct warranties on fabric quality and long-lasting color.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 pt-4">
+                            <div class="border-l-2 border-gold-500 pl-4">
+                                <h4 class="text-2xl font-bold text-white">4.8 <i class="fas fa-star text-gold-500 text-sm align-middle"></i></h4>
+                                <p class="text-zinc-500 text-sm uppercase tracking-wider mt-1">Customer Rating</p>
+                            </div>
+                            <div class="border-l-2 border-gold-500 pl-4">
+                                <h4 class="text-2xl font-bold text-white">121+</h4>
+                                <p class="text-zinc-500 text-sm uppercase tracking-wider mt-1">Verified Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-zinc-950 border-y border-zinc-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-black border border-zinc-800 rounded-xl p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6 space-y-6" data-aos="fade-up">
+                        <span class="bg-gold-500/10 text-gold-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-gold-500/20">Featured Item</span>
+                        <h3 class="text-3xl font-extrabold uppercase text-white">Classic Black & Gold Sport Sneakers</h3>
+                        <p class="text-zinc-400 text-base leading-relaxed">
+                            Step up your shoe game with our top-selling athletic style sneaker. Crafted with comfortable breathable mesh panels, strong suede finishes, and a thick cushioning white sole that ensures all-day comfort without sacrificing clean streetwear aesthetics.
+                        </p>
+                        <ul class="space-y-2.5 text-zinc-300">
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold-500 text-sm"></i> High traction outer sole grip</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold-500 text-sm"></i> Durable premium construction stitching</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-check text-gold-500 text-sm"></i> Ideal for casual outings & sports use</li>
+                        </ul>
+                        <div class="pt-2">
+                            <a href="https://wa.me/919041876215?text=Hi,%20I'm%20interested%20in%20the%20Black%20and%20Gold%20Sport%20Sneakers" target="_blank" class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-black font-bold uppercase text-xs tracking-wider px-6 py-3.5 rounded transition-colors">
+                                Check Availability <i class="fab fa-whatsapp text-sm font-bold"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 flex justify-center" data-aos="zoom-in">
+                        <div class="bg-zinc-900 p-4 rounded-lg border border-zinc-800 max-w-sm sm:max-w-md">
+                            <img src="Screenshot 2026-05-25 191746.jpg" alt="Featured Sport Shoe" class="w-full h-auto object-cover rounded transform hover:scale-105 transition-transform duration-300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collections" class="py-24 bg-black">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white mb-4">Our Browseable Store</h2>
+                    <p class="text-zinc-400 text-base">Explore carefully selected apparel and footwear categories made to match modern style trends closely.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-zinc-950 border border-zinc-800 rounded overflow-hidden flex flex-col gold-border-glow transition-all" data-aos="fade-up" data-aos-delay="100">
+                        <div class="h-80 overflow-hidden relative group">
+                            <img src="Screenshot 2026-05-25 191733.jpg" alt="Men's wear clothing collection" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-90">
+                            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60"></div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-xl font-bold uppercase text-white tracking-wide">Men's Collection</h3>
+                                <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
+                                    Heavy puff jackets, comfortable everyday hoodies, printed t-shirts, casual shirts, and multi-stripe athletic track pants built for regular use.
+                                </p>
+                            </div>
+                            <a href="https://wa.me/919041876215?text=Hi,%20I'm%20interested%20to%20see%20your%20Men's%20Collection" target="_blank" class="w-full text-center bg-zinc-900 hover:bg-gold-500 hover:text-black border border-zinc-800 hover:border-gold-500 text-zinc-300 font-bold uppercase text-xs tracking-wider py-3 rounded transition-all">
+                                View Collection
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-950 border border-zinc-800 rounded overflow-hidden flex flex-col gold-border-glow transition-all" data-aos="fade-up" data-aos-delay="200">
+                        <div class="h-80 overflow-hidden relative group">
+                            <img src="Screenshot 2026-05-25 191802.jpg" alt="Women's collection and western wear" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 filter brightness-90">
+                            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60"></div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-xl font-bold uppercase text-white tracking-wide">Women's Collection</h3>
+                                <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
+                                    Trendy western tops, comfortable everyday sweaters, coordinates sets, smart dresses, and stylish seasonal layers available in multiple size layouts.
+                                </p>
+                            </div>
+                            <a href="https://wa.me/919041876215?text=Hi,%20I'm%20interested%20to%20see%20your%20Women's%20Collection" target="_blank" class="w-full text-center bg-zinc-900 hover:bg-gold-500 hover:text-black border border-zinc-800 hover:border-gold-500 text-zinc-300 font-bold uppercase text-xs tracking-wider py-3 rounded transition-all">
+                                View Collection
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-950 border border-zinc-800 rounded overflow-hidden flex flex-col gold-border-glow transition-all" data-aos="fade-up" data-aos-delay="300">
+                        <div class="h-80 overflow-hidden relative group">
+                            <img src="Screenshot 2026-05-25 191746.jpg" alt="Footwear collection shoes" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-90">
+                            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60"></div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div>
+                                <h3 class="text-xl font-bold uppercase text-white tracking-wide">Footwear Collection</h3>
+                                <p class="text-zinc-400 text-sm mt-2 leading-relaxed">
+                                    Smart athletic sneakers, modern casual walking footwear, lifestyle running shoes, and versatile daily trainers constructed with reliable wear resistance.
+                                </p>
+                            </div>
+                            <a href="https://wa.me/919041876215?text=Hi,%20I'm%20interested%20to%20see%20your%20Footwear%20Collection" target="_blank" class="w-full text-center bg-zinc-900 hover:bg-gold-500 hover:text-black border border-zinc-800 hover:border-gold-500 text-zinc-300 font-bold uppercase text-xs tracking-wider py-3 rounded transition-all">
+                                View Collection
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="why-choose-us" class="py-24 bg-zinc-950 border-t border-zinc-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                    <span class="text-gold-500 text-sm uppercase tracking-widest font-bold">Unmatched Retail Values</span>
+                    <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white mt-2">Built Around Quality Services</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <div class="bg-black border border-zinc-800 p-6 rounded transition-all hover:bg-zinc-900" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 rounded bg-gold-500/10 flex items-center justify-center text-gold-500 text-xl mb-4 border border-gold-500/20">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h4 class="text-lg font-bold uppercase text-white mb-2">Wholesale Pricing</h4>
+                        <p class="text-zinc-400 text-sm leading-relaxed">Enjoy direct factory rates and high value wholesale discounting options on all items, always saving you money.</p>
+                    </div>
+
+                    <div class="bg-black border border-zinc-800 p-6 rounded transition-all hover:bg-zinc-900" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 rounded bg-gold-500/10 flex items-center justify-center text-gold-500 text-xl mb-4 border border-gold-500/20">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="text-lg font-bold uppercase text-white mb-2">Fabric Warranty</h4>
+                        <p class="text-zinc-400 text-sm leading-relaxed">Shop with absolute trust. We offer guaranteed protection coverage on both garment color and overall fabric integrity.</p>
+                    </div>
+
+                    <div class="bg-black border border-zinc-800 p-6 rounded transition-all hover:bg-zinc-900" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-12 h-12 rounded bg-gold-500/10 flex items-center justify-center text-gold-500 text-xl mb-4 border border-gold-500/20">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4 class="text-lg font-bold uppercase text-white mb-2">Easy Replacements</h4>
+                        <p class="text-zinc-400 text-sm leading-relaxed">Got a size mismatch or variation problem? Our clean replacement policy keeps your shopping stress-free.</p>
+                    </div>
+
+                    <div class="bg-black border border-zinc-800 p-6 rounded transition-all hover:bg-zinc-900" data-aos="fade-up" data-aos-delay="400">
+                        <div class="w-12 h-12 rounded bg-gold-500/10 flex items-center justify-center text-gold-500 text-xl mb-4 border border-gold-500/20">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h4 class="text-lg font-bold uppercase text-white mb-2">Home Delivery</h4>
+                        <p class="text-zinc-400 text-sm leading-relaxed">Can't drop by our physical store? We offer standard, secure parcel delivery solutions directly to your doorstep.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-black">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-16" data-aos="fade-up">
+                    <div>
+                        <span class="text-gold-500 text-sm uppercase tracking-widest font-bold">What People Think</span>
+                        <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white mt-2">Reviews From Our Buyers</h2>
+                    </div>
+                    <div class="mt-4 md:mt-0 bg-zinc-950 border border-zinc-800 px-4 py-3 rounded flex items-center gap-4">
+                        <span class="text-2xl font-bold text-white">4.8 / 5.0</span>
+                        <div class="text-xs text-zinc-400">
+                            <div class="text-gold-500 space-x-0.5 mb-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            Based on 121 Store Reviews
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-zinc-950 border border-zinc-800 p-6 rounded flex flex-col justify-between space-y-6" data-aos="fade-up" data-aos-delay="100">
+                        <p class="text-zinc-300 italic text-sm leading-relaxed">
+                            "Fashion Geek has become my ultimate clothing center. Their collection of winter wear and puffer jackets is outstanding. The wholesale rates make it easy to stock up on premium fits without spending too much money."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center font-bold text-sm text-gold-400 border border-zinc-700">A</div>
+                            <div>
+                                <h5 class="text-sm font-bold text-white uppercase">Amanpreet Singh</h5>
+                                <p class="text-xs text-zinc-500">Local Customer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-950 border border-zinc-800 p-6 rounded flex flex-col justify-between space-y-6" data-aos="fade-up" data-aos-delay="200">
+                        <p class="text-zinc-300 italic text-sm leading-relaxed">
+                            "The color and fabric warranty they promise is real. Washed my casual t-shirts multiple times now, no bleeding or shrinking at all. Very polite staff and clean transaction services."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center font-bold text-sm text-gold-400 border border-zinc-700">R</div>
+                            <div>
+                                <h5 class="text-sm font-bold text-white uppercase">Rahul Sharma</h5>
+                                <p class="text-xs text-zinc-500">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-950 border border-zinc-800 p-6 rounded flex flex-col justify-between space-y-6" data-aos="fade-up" data-aos-delay="300">
+                        <p class="text-zinc-300 italic text-sm leading-relaxed">
+                            "Picked up their black mesh sneakers and they feel amazing for walking. Lightweight, well-designed, and cheaper than standard retail shops around Kharar. Easy replacement options too."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center font-bold text-sm text-gold-400 border border-zinc-700">G</div>
+                            <div>
+                                <h5 class="text-sm font-bold text-white uppercase">Gurpreet Kaur</h5>
+                                <p class="text-xs text-zinc-500">Kharar Resident</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-zinc-950 border-t border-zinc-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                    <span class="text-gold-500 text-sm uppercase tracking-widest font-bold">Visual Preview</span>
+                    <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white mt-2">Inside Our Outlet</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="h-80 rounded overflow-hidden border border-zinc-800 group relative" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="Screenshot 2026-05-25 191802.jpg" alt="Fashion Geek Front Board View" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                            <span class="text-xs uppercase tracking-wider bg-black/80 px-3 py-1.5 border border-zinc-700 rounded text-zinc-300">Storefront Gate</span>
+                        </div>
+                    </div>
+                    <div class="h-80 rounded overflow-hidden border border-zinc-800 group relative" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="Screenshot 2026-05-25 191733.jpg" alt="Clothes display collection lines" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                            <span class="text-xs uppercase tracking-wider bg-black/80 px-3 py-1.5 border border-zinc-700 rounded text-zinc-300">Apparel Racks</span>
+                        </div>
+                    </div>
+                    <div class="h-80 rounded overflow-hidden border border-zinc-800 group relative" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="Screenshot 2026-05-25 191746.jpg" alt="Premium casual lifestyle shoes" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                            <span class="text-xs uppercase tracking-wider bg-black/80 px-3 py-1.5 border border-zinc-700 rounded text-zinc-300">Footwear Display</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-black border-t border-zinc-900 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                    
+                    <div class="lg:col-span-5 space-y-8" data-aos="fade-right">
+                        <div>
+                            <span class="text-gold-500 text-sm uppercase tracking-widest font-bold">Get In Touch</span>
+                            <h2 class="text-3xl sm:text-4xl font-black uppercase text-white mt-1">Visit Fashion Geek Today</h2>
+                            <p class="text-zinc-400 text-sm mt-3 leading-relaxed">
+                                Drop by our store location to check fabric weights, examine sizes manually, and browse wholesale deals in real-time. Feel free to contact our service counter using phone or WhatsApp anytime.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4 text-sm text-zinc-300">
+                            <div class="flex items-start gap-4 p-4 bg-zinc-950 border border-zinc-900 rounded">
+                                <div class="text-gold-500 text-base mt-0.5"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h5 class="font-bold uppercase text-white mb-1 text-xs tracking-wider">Store Location Address</h5>
+                                    <p class="text-zinc-400 leading-relaxed">
+                                        Arista Complex, Near Amayra Green,<br>
+                                        Ujala, Khanpur,<br>
+                                        SAS Nagar, Punjab 140301
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 bg-zinc-950 border border-zinc-900 rounded">
+                                <div class="text-gold-500 text-base"><i class="fas fa-phone-alt"></i></div>
+                                <div>
+                                    <h5 class="font-bold uppercase text-white mb-1 text-xs tracking-wider">Phone Call Number</h5>
+                                    <p class="text-zinc-400"><a href="tel:+919041876215" class="hover:text-gold-400 transition-colors">+91 90418 76215</a></p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 bg-zinc-950 border border-zinc-900 rounded">
+                                <div class="text-gold-500 text-base"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <h5 class="font-bold uppercase text-white mb-1 text-xs tracking-wider">Store Business Hours</h5>
+                                    <p class="text-zinc-400">10:30 AM to 09:30 PM (Daily Open)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <a href="https://maps.google.com/?q=Arista+Complex,+Near+Amayra+Green,+Khanpur,+Kharar" target="_blank" class="px-5 py-3 bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-800 rounded font-bold uppercase text-xs tracking-wider flex items-center gap-2 transition-all">
+                                <i class="fas fa-directions text-gold-500"></i> Open Google Maps
+                            </a>
+                            <a href="https://wa.me/919041876215" target="_blank" class="px-5 py-3 bg-green-600 hover:bg-green-700 text-white rounded font-bold uppercase text-xs tracking-wider flex items-center gap-2 transition-all">
+                                <i class="fab fa-whatsapp"></i> Chat Live Support
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 space-y-6" data-aos="fade-left">
+                        <div class="bg-zinc-950 border border-zinc-800 p-3 rounded overflow-hidden shadow-xl">
+                            <div class="h-48 sm:h-64 rounded overflow-hidden relative mb-3">
+                                <img src="Screenshot 2026-05-25 191802.jpg" alt="Fashion Geek Signboard" class="w-full h-full object-cover filter brightness-90">
+                                <div class="absolute top-3 left-3 bg-black/80 px-3 py-1 border border-zinc-700 rounded text-xs text-gold-400 font-bold uppercase tracking-wider">
+                                    Spot Our Board
+                                </div>
+                            </div>
+                            <div class="bg-black border border-zinc-900 rounded p-6 text-center space-y-3">
+                                <div class="text-zinc-500 text-3xl"><i class="fas fa-map-marked-alt"></i></div>
+                                <h4 class="text-sm font-bold uppercase tracking-wider text-zinc-200">Interactive Route Finder</h4>
+                                <p class="text-xs text-zinc-400 max-w-sm mx-auto">Click below to load precision tracking directions directly through your system navigation software.</p>
+                                <a href="https://maps.google.com/?q=Arista+Complex,+Near+Amayra+Green,+Khanpur,+Kharar" target="_blank" class="inline-block bg-gold-500 hover:bg-gold-600 text-black font-extrabold uppercase text-xs tracking-widest px-6 py-2.5 rounded transition-all">
+                                    Navigate Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-20 pt-8 border-t border-zinc-900 text-center text-xs text-zinc-500 space-y-2">
+                    <p class="uppercase tracking-widest font-medium text-zinc-400">FASHION GEEK &bull; WHOLESALE CLOTHING STORE</p>
+                    <p>&copy; 2026 Fashion Geek. All Rights Reserved. All product color and fabric components are covered under shop purchase standards.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Initialize Animations
+        AOS.init({
+            once: true,
+            duration: 800
+        });
+
+        // Mobile Menu Toggling Controls
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Auto collapse menu line items when selecting destination links
+        const navLinks = mobileMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
